@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.appjogos.HomeFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.appjogos.LoginFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment2"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.appjogos.WelcomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_welcome"/>
+    <fragment
+        android:id="@+id/jogo1Fragment"
+        android:name="com.example.appjogos.Jogo1Fragment"
+        android:label="Jokenpô"
+        tools:layout="@layout/fragment_jogo1" />
+    <fragment
+        android:id="@+id/jogo2Fragment"
+        android:name="com.example.appjogos.Jogo2Fragment"
+        android:label="Cara ou Coroa"
+        tools:layout="@layout/fragment_jogo2" />
+    <fragment
+        android:id="@+id/jogo3Fragment"
+        android:name="com.example.appjogos.Jogo3Fragment"
+        android:label="BlackJack"
+        tools:layout="@layout/fragment_jogo3" />
+</navigation>

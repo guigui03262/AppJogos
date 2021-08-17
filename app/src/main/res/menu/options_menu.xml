@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/welcomeFragment"
+        android:title="Menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/jogo1Fragment"
+        android:title="Jokenpô"
+        app:showAsAction="never"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/jogo2Fragment"
+        android:title="Cara ou Coroa"
+        app:showAsAction="never"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/jogo3Fragment"
+        android:title="game 3"
+        app:showAsAction="never"
+        android:menuCategory="secondary"/>
+
+</menu>

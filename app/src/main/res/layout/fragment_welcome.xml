@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeFragment">
+
+    <TextView
+        android:id="@+id/welcomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        />
+
+    <TextView
+        android:id="@+id/jogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jokenpô"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTV"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        />
+
+    <TextView
+        android:id="@+id/jogo1Vitorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitórias: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogo1"
+        app:layout_constraintEnd_toStartOf="@id/jogo1"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo1Derrotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Derrotas: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/jogo1"
+        app:layout_constraintTop_toBottomOf="@id/jogo1"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo1Empates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Empates: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogo1"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cara ou Coroa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogo1Derrotas"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        />
+
+    <TextView
+        android:id="@+id/jogo2Vitorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitorias: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/jogo2"
+        app:layout_constraintEnd_toStartOf="@id/jogo2"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo2Derrotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Derrotas: "
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/jogo2"
+        app:layout_constraintTop_toBottomOf="@id/jogo2"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BlackJack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogo2Derrotas"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        />
+
+    <TextView
+        android:id="@+id/jogo3Vitorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitorias: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogo3"
+        app:layout_constraintEnd_toStartOf="@id/jogo3"
+        android:layout_marginTop="16dp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo3Derrotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Derrotas: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/jogo3"
+        app:layout_constraintTop_toBottomOf="@id/jogo3"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/jogo3Empates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Empates: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogo3"
+        android:textSize="25sp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
